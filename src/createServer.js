@@ -14,7 +14,7 @@ function createServer() {
 
     console.log(reqUrl);
 
-    if (!parts) {
+    if (!parts.length === 0) {
       messages.errors.push({
         message: 'The parts are required!',
       });
